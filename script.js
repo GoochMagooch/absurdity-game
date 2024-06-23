@@ -1,8 +1,6 @@
 let randomNum = Math.random() * 5 + 1;
-
 const absurd = document.querySelector(".absurd");
 const lowOrHi = document.querySelector(".lowOrHi");
-
 const btn = document.querySelector(".btn");
 const btnValue = document.querySelector(".btn-value");
 
