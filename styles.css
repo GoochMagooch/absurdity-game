@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 
-.btn {
+button {
     height: 69px;
     width: 150px;
     border: 1px solid black;
