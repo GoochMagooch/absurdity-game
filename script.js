@@ -17,7 +17,7 @@ function tryYourLuck() {
             setKillButton();
         } else if (randomNum < 3.141592653589793) {
             output.textContent = "This number is less than PI, try again!";
-            btnValue.textContent = randomNum
+            btnValue.textContent = `Your number is: ${randomNum}`
         } else {
             output.textContent = "This number is higher than PI, try again!"
             btnValue.textContent = `Your number is: ${randomNum}`
