@@ -1,9 +1,7 @@
-let randomNum = Math.random() * 5 + 1;
-let absurd = document.querySelector(".absurd");
-let lower = document.querySelector(".lower");
-let higher = document.querySelector(".higher");
-let btnValue = document.querySelector(".btn-value");
-let btn = document.querySelector(".btn");
+let absurd = document.getElementById("absurd");
+let output = document.getElementById("output");
+let btnValue = document.getElementById("btn-value");
+let btn = document.getElementById("btn");
 
 /*
 function setKillButton() {
@@ -24,15 +22,17 @@ function resetTime() {
 */
 
 function tryYourLuck() {
-    
+    let randomNum = Math.random() * 4 + 1;
     if (randomNum === 3.141592653589793) {
         absurd.textContent = "Congratulations you landed on PI, how absurd!"
+        btnValue.textContent = randomNum
         setKillButton();
     } else if (randomNum < 3.141592653589793) {
-        lower.textContent = "This number is less than PI, try again!";
+        output.textContent = "This number is less than PI, try again!";
+        btnValue.textContent = randomNum
         resetTime();
     } else {
-        higher.textContent = "This number is higher than PI, try again!"
+        output.textContent = "This number is higher than PI, try again!"
         btnValue.textContent = `Your number is: ${randomNum}`;
         resetTime();
     }
