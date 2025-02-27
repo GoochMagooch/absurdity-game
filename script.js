@@ -12,7 +12,7 @@ function tryYourLuck() {
     if (game === true) {
         let randomNum = parseFloat((Math.random() * 3 + 1).toFixed(2))
         if (randomNum === pi) {
-            output.textContent = "Congratulations you landed on PI, how absurd!"
+            output.textContent = "Congratulations you landed on PI!"
             btnValue.textContent = randomNum
             setKillButton();
         } else if (randomNum < pi) {
