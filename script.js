@@ -10,7 +10,7 @@ function setKillButton() {
 
 function tryYourLuck() {
     if (game === true) {
-        let randomNum = parseFloat(Math.random() * 3 + 1).toFixed(2)
+        let randomNum = parseFloat((Math.random() * 3 + 1).toFixed(2))
         if (randomNum === pi) {
             output.textContent = "Congratulations you landed on PI, how absurd!"
             btnValue.textContent = randomNum
