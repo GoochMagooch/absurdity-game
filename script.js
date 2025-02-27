@@ -1,7 +1,7 @@
 let output = document.getElementById("output");
 let btnValue = document.getElementById("btn-value");
 let btn = document.getElementById("btn");
-let pi = 3.14
+let pi = 3
 let game = true
 
 function setKillButton() {
@@ -10,8 +10,8 @@ function setKillButton() {
 
 function tryYourLuck() {
     if (game === true) {
-        let randomNum = parseFloat(Math.random() * 3 + 1).toFixed(2)
-        if (randomNum == pi) {
+        let randomNum = parseFloat(Math.floor(Math.random() * 3 + 1))
+        if (randomNum === pi) {
             output.textContent = "Congratulations you landed on PI, how absurd!"
             btnValue.textContent = randomNum
             setKillButton();
