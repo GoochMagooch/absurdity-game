@@ -8,7 +8,7 @@ function setKillButton() {
     game = false
 }
 
-function tryYourLuck() {
+btn.addEventListener('click', function() {
     if (game === true) {
         let randomNum = parseFloat((Math.random() * 3 + 1).toFixed(2))
         if (randomNum === pi) {
@@ -25,4 +25,4 @@ function tryYourLuck() {
     } else {
         return
     }
-}
+})
